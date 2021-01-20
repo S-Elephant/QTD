@@ -1,0 +1,61 @@
+﻿- instead of just <Animation> add stand, walk, attack, die animations and add a corpse texture... nah wait this must be done in the factory. Create different kinds of animations there for that type.
+- flying enemies can not be blocked for now and flying enemies have no weapons.
+- GUI
+	- find texture for the next-wave-spawn-bar-progress
+- write readme.
+- add bank building? allows gold pile to be build? generates a little gold.
+- add tower smoke visuals and other visuals by xml when shooting for the baseweapon.
+	- finish the visual class and pool it in the level class. problem is to create animations w/o garbage. prolly needs eVisual or something as enum.
+	- i am considering of only adding a few visuals or something.... nah i dont know how the fuck to pool simpleasprites...
+- add special projectile arrow that has 8 directions or just gets a rotation in the draw method. prolly  the last one.
+- need simple editor
+	- load/save bg
+	- load/save waypoints
+	- screw the rest. the rest is done in xml or something.
+
+Bugs:
+-[fixed] defenders dont split up from 1 target to multiple targets.
+-[probably fixed now] defenders sometimes keep chasing enemies out of range?
+-[fixed?] sometimes enemies dont attack the 2nd defender after it killed the first one. it does however stay in place...
+- defender still keeps attacking sometimes.. but when the runner returns they continue battle.
+
+busy:
+- Add modifiers
+        public bool ImmuneStun;
+        public bool ImmuneSlow;
+        public bool ImmuneArmorReduction;
+        public bool ImmuneRooted;
+
+
+	- add upgrade delay
+		- add bar to each tower as upgrade bar
+		- while upgrading remove all buttons on tower.... fuck this shit.... upgrading a tower is too annoying.
+			- what if it is supplying and the user cancels the upgrade? or do we give back the supply and charge 50% of the upg cost anyway?
+				- then the upgrade must have a cancel button.
+
+AfterCare:
+- Allow damage aura's on towers and defenders and enemies
+- runners with 50% transparancy as ghost type?
+- add another cost type like instead of just gold also silver and make towers that generate silver.
+- add ugprade delay with blue upgrade bar instead of instant upgrading a tower.
+
+Features:
+- Runners may restart at the start after reaching the finish.
+- Almost everything including the towers and their upgrades are created from XML and are thus highly customizable.
+- Camera 2D.
+- Towers and upgrades.
+- Waypoints that allow multiple paths.
+- Knows the statistics about the runners like the % completed route.
+- Defenders. Units that are spawned by a tower and gather arround a rally point. They block one enemy each and try to kill it.
+- Rallypoints have their own ranges from the tower and each rallypoint has a range for their defenders to gather around it.
+- Waypoint spread: runners do not exactly follow the waypoint lines but randomly spread out.
+- Towers may generate gold when a wave spawns and/or every x millisecond.
+- Critical and income floating texts.
+- Fully working and dynamically (pre-)generated minimap that responds to the mouse, hideable, etc.
+- Towers either have a supply upkeep or cost supply.
+- The first wave doesn't spawn untill the player hit the button to force the next spawn. This allows the player to get a look at the map and build his/her first towers in peace.
+- Certain towers may require another tower to be built and still present before it may be build.
+- Towers can be sold dor half their total value including upgrades.
+- Buildable towers can be allowed or disallowed for each specific level for each tower if desired.
+	- Category buttons that have no available towers are disabled (invisible).
+- Allows custom tiles. The engine merges the tiles into bigger tiles of 2048x2048 and only draws the visible area of those.

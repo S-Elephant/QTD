@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tower>
+  <Required>
+    <ID>2</ID>
+    <Name>Tower2</Name>
+    <Cost>400</Cost>
+    <Description>A test tower #2. This one spawns defenders but does not shoot.</Description>
+    <Animation>Tower1</Animation>
+    <Icon>soldier1Tower</Icon>
+  </Required>
+
+  <Basic>
+    <BuildSize>2;2</BuildSize>
+    <Supply>1</Supply>
+  </Basic>
+
+  <Spawns maxRallyPointRange="64" persuitRange="128">
+    <Defender>
+      <ID>1</ID>
+      <InitialAmount>1</InitialAmount>
+      <Max>3</Max>
+      <UpgCntCost>150</UpgCntCost>
+    </Defender>
+  </Spawns>
+
+  <Info>
+    <L>A tower that spawns soldiers.</L>
+    <L>Cost: 200G, 1 Supply.</L>
+    <L>Soldier 1</L>
+    <L> Initial Soldiers: 1. Max Soldiers: 3</L>
+    <L> Soldier amount upgrade cost: 150</L>
+  </Info>
+
+  <Categories>
+    <ID>3</ID>
+  </Categories>
+</Tower>

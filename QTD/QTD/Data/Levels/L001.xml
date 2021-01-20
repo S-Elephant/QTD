@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Level>
+  <LevelInfo>
+    <Name>Test Level 001</Name>
+    <CollisionGridSize>64</CollisionGridSize>
+    <LevelSize>2560;1600</LevelSize>
+    <StartGold>20000</StartGold>
+  </LevelInfo>
+
+  <InitialTowers>
+    <Tower>
+      <ID>2</ID>
+      <GridIdx>14;6</GridIdx>
+    </Tower>
+  </InitialTowers>
+
+  <Waypoints spread="16">
+    <WP id="0" location="600;600">
+      <NextWaypoints>
+        <ID>7</ID>
+      </NextWaypoints>
+    </WP>
+    <WP id="1" location="400;600">
+      <NextWaypoints>
+        <ID>0</ID>
+        <ID>6</ID>
+      </NextWaypoints>
+    </WP>
+    <WP id="2" location="400;400">
+      <NextWaypoints>
+        <ID>1</ID>
+      </NextWaypoints>
+    </WP>
+    <WP id="3" location="200;200" isStart="True">
+      <NextWaypoints>
+        <ID>2</ID>
+        <ID>4</ID>
+      </NextWaypoints>
+    </WP>
+    <WP id="4" location="425;200">
+      <NextWaypoints>
+        <ID>2</ID>
+      </NextWaypoints>
+    </WP>
+    <WP id="5" location="425;100" isStart="True">
+      <NextWaypoints>
+        <ID>4</ID>
+      </NextWaypoints>
+    </WP>
+    <WP id="6" location="100;550" isFinish="True" />
+    <WP id="7" location="700;500">
+      <NextWaypoints>
+        <ID>8</ID>
+      </NextWaypoints>
+    </WP>
+    <WP id="8" location="700;350">
+      <NextWaypoints>
+        <ID>9</ID>
+      </NextWaypoints>
+    </WP>
+    <WP id="9" location="600;350" isFinish="True" />
+  </Waypoints>
+
+  <Waves>
+    <Wave nr="1" spawnDelay="1200" timeUntilNextWave="12000">
+      <startWP id="5">
+        <Runner id="1" amount="2" />
+      </startWP>
+    </Wave>
+    <Wave nr="2" spawnDelay="500" timeUntilNextWave="60000">
+      <startWP id="3">
+        <Runner id="1" amount="2" />
+        <Runner id="1" amount="1" />
+      </startWP>
+      <startWP id="5">
+        <Runner id="1" amount="1" />
+      </startWP>
+    </Wave>
+    <Wave nr="3" spawnDelay="700" timeUntilNextWave="999000">
+      <startWP id="5">
+        <Runner id="1" amount="10" />
+      </startWP>
+    </Wave>
+  </Waves>
+
+  <BuildableTowers type="restricted">
+    <ID>5</ID>
+  </BuildableTowers>
+
+  <Environments>
+    <Environment>
+      <Type>Tree1</Type>
+      <Location>200;400</Location>
+    </Environment>
+    <Environment>
+      <Type>Tree2</Type>
+      <Location>350;200</Location>
+    </Environment>
+  </Environments>
+
+  <UnBuildables>5;5|6;6|6;7</UnBuildables>
+
+  <BackGround fillTileSheet="forestMana1.png" fillTileSource="192;96;32;32">
+    <Tiles>
+      <SpriteSheet name="forestMana1.png">
+        <Tile location="0;0" sourceRectangle="192;96;32;32" />
+        <Tile location="32;0" sourceRectangle="192;96;32;32" />
+        <Tile location="0;96" sourceRectangle="192;96;32;32" />
+        <Tile location="-16;128" sourceRectangle="192;96;32;32" />
+        <Tile location="96;96" sourceRectangle="192;96;32;32" />
+        <Tile location="128;128" sourceRectangle="192;96;32;32" />
+        <Tile location="2016;128" sourceRectangle="192;32;32;32" />
+        <Tile location="2048;128" sourceRectangle="192;32;32;32" />
+        <Tile location="2050;128" sourceRectangle="192;96;32;32" />
+      </SpriteSheet>
+      <SpriteSheet name="forestMana2.png">
+        <Tile location="2100;128" sourceRectangle="192;192;32;32" />
+        <Tile location="2132;128" sourceRectangle="192;192;32;32" />
+        <Tile location="64;64" sourceRectangle="192;192;32;32" />
+        <Tile location="96;64" sourceRectangle="192;192;32;32" />
+      </SpriteSheet>
+    </Tiles>
+    <Objects>
+      <Object location="256;128" sheet="forestManaPlants.png" sourceRectangle="12;10;60;70" />
+      <Object location="1970;128" sheet="forestManaPlants.png" sourceRectangle="12;10;60;70" />
+      <Object location="2040;128" sheet="forestManaPlants.png" sourceRectangle="12;10;60;70" />
+    </Objects>
+  </BackGround>
+</Level>

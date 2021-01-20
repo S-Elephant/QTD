@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tower>
+  <Required>
+    <ID>6</ID>
+    <Name>Castle</Name>
+    <Description>A heavy castle</Description>
+    <Cost>2500</Cost>
+    <Animation>Castle1</Animation>
+    <Icon>castle1</Icon>
+  </Required>
+
+  <Basic>
+    <BuildSize>6;5</BuildSize>
+    <BuildTime>15000</BuildTime>
+    <UpgradeTime>1250</UpgradeTime>
+    <Supply>3</Supply>
+  </Basic>
+
+  <Weapons>
+    <Weapon>
+      <RoF>800</RoF>
+      <Range>400</Range>
+      <CritRate>0</CritRate>
+      <CritMultiplier>2</CritMultiplier>
+      <Projectile>TestBullet1</Projectile>
+      <ProjectileSpawnOffset>-16;-64</ProjectileSpawnOffset>
+      <Damage>3</Damage>
+      <Splash>0</Splash>
+      <SplashDmgPercentage>50</SplashDmgPercentage>
+    </Weapon>
+    <Weapon>
+      <RoF>350</RoF>
+      <Range>400</Range>
+      <CritRate>0</CritRate>
+      <CritMultiplier>2</CritMultiplier>
+      <Projectile>TestBullet1</Projectile>
+      <ProjectileSpawnOffset>16;-64</ProjectileSpawnOffset>
+      <Damage>3</Damage>
+      <Splash>0</Splash>
+      <SplashDmgPercentage>50</SplashDmgPercentage>
+    </Weapon>
+    <Weapon>
+      <RoF>623</RoF>
+      <Range>400</Range>
+      <CritRate>0</CritRate>
+      <CritMultiplier>2</CritMultiplier>
+      <Projectile>TestBullet1</Projectile>
+      <ProjectileSpawnOffset>8;-48</ProjectileSpawnOffset>
+      <Damage>3</Damage>
+      <Splash>0</Splash>
+      <SplashDmgPercentage>50</SplashDmgPercentage>
+    </Weapon>
+  </Weapons>
+
+  <Info>
+    <L>A heavy castle</L>
+    <L>Cost: 2500G, Supply: 3</L>
+    <L>Requires: Tower 1 and Tower 2 </L>
+    <L>Weapons:</L>
+    <L>  3x: RoF: 350-800, Range: 400, Dmg: 3, Splash: 0</L>
+  </Info>
+  
+  <Categories>
+    <ID>1</ID>
+  </Categories>
+  
+  <Requirements>
+    <OR>
+      <AND_ID>1</AND_ID>
+      <AND_ID>2</AND_ID>
+    </OR>
+  </Requirements>
+</Tower>

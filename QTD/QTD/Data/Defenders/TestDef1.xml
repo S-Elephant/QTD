@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defender>
+  <ID>1</ID>
+  <Name>Test Defender #1</Name>
+  <Description>A test defender for testing purpose.</Description>
+  <HP>50</HP>
+  <IsMelee>True</IsMelee>
+  <MeleeSightRange>96</MeleeSightRange>
+  <SpawnDelay>3000</SpawnDelay>
+  <Armor>Medium</Armor>
+  <Animation>Soldier01</Animation>
+  <Velocity>1.4</Velocity>
+  <HPRegen>1</HPRegen>
+
+  <Weapons>
+    <Sword>
+      <AttackableTargets>Ground</AttackableTargets>
+      <Damage>10</Damage>
+      <Range>50</Range>
+      <RoF>1000</RoF>
+      <DamageType>Normal</DamageType>
+      <ImpactFX>-1</ImpactFX>
+      <StunChance>50</StunChance>
+      <Slows>False</Slows>
+      <RootChance>5</RootChance>
+      <ArmorReductionValue>0</ArmorReductionValue>
+    </Sword>
+  </Weapons>
+</Defender>

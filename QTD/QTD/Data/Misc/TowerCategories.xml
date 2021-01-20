@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Categories>
+  <Category>
+    <ID>0</ID>
+    <Text>Basic</Text>
+    <Icon>tower1</Icon>
+  </Category>
+  <Category>
+    <ID>1</ID>
+    <Text>Advanced</Text>
+    <Icon>castle1</Icon>
+  </Category>
+  <Category>
+    <ID>2</ID>
+    <Text>Supply</Text>
+    <Icon>supply</Icon>
+  </Category>
+  <Category>
+    <ID>3</ID>
+    <Text>Defenders</Text>
+    <Icon>soldier1</Icon>
+  </Category>
+  <Category>
+    <ID>4</ID>
+    <Text>Income</Text>
+    <Icon>coins</Icon>
+  </Category>
+  <Category>
+    <ID>5</ID>
+    <Text>Misc</Text>
+    <Icon>tower1</Icon>
+  </Category>
+</Categories>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tower>
+  <Required>
+    <ID>3</ID>
+    <Name>Gold Pile</Name>
+    <Description>A pile of gold that generates interest.</Description>
+    <Cost>200</Cost>
+    <Animation>PileOfGold</Animation>
+    <Icon>pileOfGold</Icon>
+  </Required>
+
+  <Basic>
+    <BuildSize>2;2</BuildSize>
+    <BuildTime>1500</BuildTime>
+    <Supply>1</Supply>
+  </Basic>
+
+  <Advanced>
+    <IncomePerTick>2</IncomePerTick>
+    <IncomeTickDelay>2500</IncomeTickDelay>
+    <IncomePerWave>0</IncomePerWave>
+  </Advanced>
+
+  <Info>
+    <L>A pile of gold that generates interest.</L>
+    <L>Cost: 200G, Supply: 1</L>
+    <L>Requires: Tower 2 </L>
+    <L>Generates 2 gold / 2.5 sec.</L>
+  </Info>
+
+  <Requirements>
+    <OR>
+      <AND_ID>2</AND_ID>
+    </OR>
+  </Requirements>
+
+  <Categories>
+    <ID>4</ID>
+  </Categories>
+  
+</Tower>

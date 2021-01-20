@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Enemy>
+  <ID>1</ID>
+  
+  <Basic>
+    <Name>Test enemy 1</Name>
+    <HP>180</HP>
+    <Bounty>12</Bounty>
+    <Velocity>2.0</Velocity>
+    <Animation>Test1</Animation>
+    <IsMelee>False</IsMelee>
+    <IsGround>True</IsGround>
+    <Recycles>True</Recycles>
+    <Armor>Medium</Armor>
+  </Basic>
+
+  <Weapons>
+    <Weapon>
+      <DamageType>Normal</DamageType>
+      <Range>25</Range>
+      <RoF>1000</RoF>
+      <Damage>1.0</Damage>
+      <Projectile>None</Projectile>
+    </Weapon>
+  </Weapons>
+  
+  <Immunities>
+    <Stun>True</Stun>
+  </Immunities>
+</Enemy>

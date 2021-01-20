@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tower>
+  <Required>
+    <ID>1</ID>
+    <Name>Tower1</Name>
+    <Description>A test tower #1. Shoots projectiles.</Description>
+    <Cost>200</Cost>
+    <Animation>Tower1</Animation>
+    <Icon>Tower1</Icon>
+  </Required>
+
+  <Basic>
+    <BuildSize>2;2</BuildSize>
+    <BuildTime>1500</BuildTime>
+    <UpgradeTime>1250</UpgradeTime>
+    <Supply>1</Supply>
+  </Basic>
+
+  <Weapons>
+    <Weapon>
+      <RoF>800</RoF>
+      <Range>200</Range>
+      <CritRate>0</CritRate>
+      <CritMultiplier>2</CritMultiplier>
+      <Projectile>CannonBall16</Projectile>
+      <ProjectileSpawnOffset>0;-64</ProjectileSpawnOffset>
+      <Damage>2</Damage>
+      <Splash>0</Splash>
+      <SplashDmgPercentage>50</SplashDmgPercentage>
+      <ShootFX>7</ShootFX>
+    </Weapon>
+  </Weapons>
+
+  <Info>
+    <L>A Basic Tower.</L>
+    <L>Cost: 200G, 1 Supply.</L>
+    <L>Basic Weapon</L>
+    <L>  RoF:800, Range: 200, Dmg: 2, Splash: 0</L>
+  </Info>
+  
+  <Categories>
+    <ID>0</ID>
+  </Categories>
+  
+  <Upgrades>
+    <Tower>
+      <Cost>200</Cost>
+      <NewTowerID>2</NewTowerID>
+    </Tower>
+  </Upgrades>
+</Tower>

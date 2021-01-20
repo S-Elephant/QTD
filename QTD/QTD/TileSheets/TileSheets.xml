@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TileSheets>
+  <Sheet>
+    <FileName>default01.xml</FileName>
+    <GridSize>32;32</GridSize>
+  </Sheet>
+</TileSheets>

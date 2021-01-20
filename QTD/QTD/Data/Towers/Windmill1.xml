@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tower>
+  <Required>
+    <ID>4</ID>
+    <Name>Windmill</Name>
+    <Description>A windmill that supplies your people with food.</Description>
+    <Cost>200</Cost>
+    <Animation>WindMill1</Animation>
+    <Icon>windMill1</Icon>
+  </Required>
+
+  <Basic>
+    <BuildSize>4;4</BuildSize>
+    <BuildTime>1500</BuildTime>
+    <Supply>-5</Supply>
+  </Basic>
+
+  <Info>
+    <L>A windmill that supplies food.</L>
+    <L>Cost: 200G, supplies 5</L>
+  </Info>
+
+  <Categories>
+    <ID>2</ID>
+  </Categories>
+</Tower>
